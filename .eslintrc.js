@@ -20,6 +20,8 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugin: ['@bable'],
-  rules: {},
+  plugins: ['react', '@bable'],
+  rules: {
+    'import/no-extraneous-dependancies': 0,
+  },
 };
